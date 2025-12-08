@@ -7,6 +7,7 @@ const Navbar = () => {
 
   const navItems = [
     { path: '/', label: 'Home' },
+    { path: '/about', label: 'About' },  // Added About link
     { path: '/editor', label: 'Editor' },
     { path: '/community', label: 'Community' },
     { path: '/contact', label: 'Contact' }

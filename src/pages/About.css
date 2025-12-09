@@ -1,14 +1,12 @@
 .about-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: none;
 }
 
 .about-hero {
   padding: 120px 20px 80px;
   text-align: center;
   color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-              url('https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=1600');
   background-size: cover;
   background-position: center;
 }
@@ -83,14 +81,14 @@
 
 .section-subtitle {
   font-size: 1.125rem;
-  color: #718096;
+  color: white;
   max-width: 600px;
   margin: 0 auto;
 }
 
 /* Values Section */
 .values-section {
-  background: white;
+  background: none;
 }
 
 .values-grid {
@@ -100,11 +98,15 @@
 }
 
 .value-card {
-  padding: 2rem;
-  border-radius: 12px;
-  background: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 40px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .value-card:hover {
@@ -135,7 +137,7 @@
 
 /* Journey Section */
 .journey-section {
-  background: #f7fafc;
+  background: none;
 }
 
 .timeline-container {
@@ -194,7 +196,7 @@
 .timeline-content h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #2d3748;
+  color: #ffffff;
 }
 
 .timeline-content p {
@@ -204,7 +206,7 @@
 
 /* Team Section */
 .team-section {
-  background: white;
+  background: none;
 }
 
 .team-grid {
@@ -214,12 +216,15 @@
 }
 
 .team-card {
-  text-align: center;
-  padding: 2rem;
-  border-radius: 12px;
-  background: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 40px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .team-card:hover {
@@ -243,7 +248,7 @@
 .team-card h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #2d3748;
+  color: #ffffff;
 }
 
 .team-role {
@@ -319,7 +324,6 @@
 }
 
 .cta-button.primary {
-  background: white;
   color: #667eea;
 }
 
@@ -335,7 +339,6 @@
 }
 
 .cta-button.secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
   border-color: white;
 }
 

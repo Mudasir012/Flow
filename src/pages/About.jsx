@@ -188,7 +188,7 @@ const AboutPage = () => {
           <h2>Join Our Creative Community</h2>
           <p>Be part of the revolution in video editing. Whether you're creating your first video or your hundredth, Flow is here to help you succeed.</p>
           <div className="cta-buttons">
-            <button className="cta-button primary">Start Creating Free</button>
+            <a href="/editor"><button className="cta-button primary">Start Creating Free</button></a>
             <button className="cta-button secondary">Join Our Discord</button>
           </div>
         </div>

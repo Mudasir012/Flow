@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   Camera,
   Film,
@@ -61,10 +62,10 @@ const AnimatedSection = ({
     <div
       ref={ref}
       className={`
-        ${className}
-        scroll-${animation}-in
-        ${isVisible ? "visible" : ""}
-      `}
+          ${className}
+          scroll-${animation}-in
+          ${isVisible ? "visible" : ""}
+        `}
       style={{
         transitionDelay: isVisible ? `${delay}ms` : "0ms",
         opacity: isVisible ? 1 : 0,
@@ -531,37 +532,35 @@ export default function HomePage() {
               </div>
             </div>
           </AnimatedSection>
-
-          {/* Enhanced Footer */}
           <footer className="footer">
             <div className="footer-links">
               <div className="footer-column">
                 <h4>Product</h4>
-                <a href="#">Features</a>
-                <a href="#">Pricing</a>
-                <a href="#">Use Cases</a>
-                <a href="#">Updates</a>
+                <Link to="/features">Features</Link>
+                <Link to="/pricing">Pricing</Link>
+                <Link to="/use-cases">Use Cases</Link>
+                <Link to="/updates">Updates</Link>
               </div>
               <div className="footer-column">
                 <h4>Resources</h4>
-                <a href="#">Documentation</a>
-                <a href="#">Tutorials</a>
-                <a href="#">Blog</a>
-                <a href="#">Community</a>
+                <Link to="/documentation">Documentation</Link>
+                <Link to="/tutorials">Tutorials</Link>
+                <Link to="/blog">Blog</Link>
+                <Link to="/community">Community</Link>
               </div>
               <div className="footer-column">
                 <h4>Company</h4>
-                <a href="/about">About</a>
-                <a href="#">Careers</a>
-                <a href="#">Contact</a>
-                <a href="#">Press</a>
+                <Link to="/about">About</Link>
+                <Link to="/careers">Careers</Link>
+                <Link to="/contact">Contact</Link>
+                <Link to="/press">Press</Link>
               </div>
               <div className="footer-column">
                 <h4>Legal</h4>
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Security</a>
-                <a href="#">Compliance</a>
+                <Link to="/privacy">Privacy</Link>
+                <Link to="/terms">Terms</Link>
+                <Link to="/security">Security</Link>
+                <Link to="/compliance">Compliance</Link>
               </div>
             </div>
             <div className="footer-bottom">

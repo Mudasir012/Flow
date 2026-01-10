@@ -1,6 +1,6 @@
 # Flow 🎬
 
-**FlowGram** is a full-stack web platform for video sharing and editing. It combines a social feed with a multi-track video editor, focusing on performance and a premium user experience.
+**Flow** is a full-stack web platform for video sharing and editing. It combines a social feed with a multi-track video editor, focusing on performance and a premium user experience.
 
 ---
 

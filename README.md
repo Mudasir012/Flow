@@ -162,11 +162,6 @@ Add a `CONTRIBUTING.md` for more detailed workflows if needed.
 - File uploads fail: ensure `backend/uploads/` is writable and your storage solution (local or Cloudinary) is configured.
 - Frontend build issues: run `npm run lint` and fix reported issues.
 
----
-
-## License 📄
-
-This project is licensed under the **MIT License**.
 
 ---
 
@@ -174,7 +169,3 @@ This project is licensed under the **MIT License**.
 
 If you'd like help maintaining or improving this README further, tell me which sections you want expanded (setup, deployment, CI, or sample envs) and I’ll update it.
 
-
----
-
-*Generated and tailored for this repository by GitHub Copilot.*
